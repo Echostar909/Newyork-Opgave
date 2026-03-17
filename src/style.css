@@ -67,7 +67,9 @@ body{
     transition: background-color 180ms ease, color 180ms ease, filter 180ms ease, transform 150ms ease;
     cursor: pointer;
     font-family: Arial, sans-serif;
+    font-size: 14px;
 }
+
 
 .buttons:hover{
     /* animate to a lighter state on hover */
@@ -78,6 +80,7 @@ body{
     filter: brightness(1.06);                               
 }
 
+
 .a:focus-visible{
     outline: 3px solid rgba(123, 203, 200, 0.6);
     outline-offset: 2px;
@@ -86,6 +89,17 @@ body{
 @media (prefers-reduced-motion: reduce) {
     .a { transition: none; transform: none; }
 }
+
+
+.unordered-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 
 .frontpage-container{
     margin-top: 40px;
@@ -103,6 +117,13 @@ body{
     text-shadow: 0px 0px 0px black;
     font-size: 17px;
     font-family: Arial, sans-serif;
+}
+
+
+.frontpage-title{
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    text-shadow: 1px 1px 1px black;
 }
 
 
