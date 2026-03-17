@@ -1,7 +1,6 @@
 body{
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-
 }
 
 
@@ -18,6 +17,7 @@ body{
     padding: 20px 30px;
     margin: 0;
     background-color: #BAE4E2;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -29,6 +29,7 @@ body{
     flex-grow: 1;
     margin: 0;
     padding: 20px 0px;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -41,11 +42,10 @@ body{
 }
 
 
-.button{
+.button-flex{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #6BCDC9;
 }
 
 
@@ -55,7 +55,7 @@ body{
 }
 
 
-.a{
+.buttons{
     text-decoration: none;
     background-color: #006699;
     padding: 11px 10px;
@@ -63,9 +63,29 @@ body{
     font-size: 12px;
     border-right: 1px solid black;
     color: #79BFC5;
-
+    text-shadow: 1px 1px 1px black;
+    transition: background-color 180ms ease, color 180ms ease, filter 180ms ease, transform 150ms ease;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
 }
 
+.buttons:hover{
+    /* animate to a lighter state on hover */
+    background-color: #BAE4E2;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    transform: translateY(-2px);
+    filter: brightness(1.06);                               
+}
+
+.a:focus-visible{
+    outline: 3px solid rgba(123, 203, 200, 0.6);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .a { transition: none; transform: none; }
+}
 
 .frontpage-container{
     margin-top: 40px;
@@ -76,10 +96,13 @@ body{
 }
 
 
-.text{
+.frontpage-text{
     width: auto;
     height: auto;
     margin-left: 10px;
+    text-shadow: 0px 0px 0px black;
+    font-size: 17px;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -101,4 +124,5 @@ body{
     background-color:#006699;
     color:#6BCDC9;
     padding: 3px 0px;
+    text-shadow: 1px 1px 1px black;
 }
