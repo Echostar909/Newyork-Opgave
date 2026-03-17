@@ -1,0 +1,104 @@
+body{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+
+}
+
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.title-word{
+    font-size: 80px;
+    color:#555462;
+    padding: 20px 30px;
+    margin: 0;
+    background-color: #BAE4E2;
+}
+
+
+.title-newyork{
+    font-size: 80px;
+    color: #7BCBC8;
+    text-align: center;
+    background-color: #555462;
+    flex-grow: 1;
+    margin: 0;
+    padding: 20px 0px;
+}
+
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    background-color: #006699;
+}
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6BCDC9;
+}
+
+
+.flag-img{
+    width: 150px;
+    height: 100%;
+}
+
+
+.a{
+    text-decoration: none;
+    background-color: #006699;
+    padding: 11px 10px;
+    display: inline-block;
+    font-size: 12px;
+    border-right: 1px solid black;
+    color: #79BFC5;
+
+}
+
+
+.frontpage-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-grow: 1;
+}
+
+
+.text{
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+}
+
+
+.frontpage-img{
+    margin-left: 40px;
+    margin-right: 40px;
+    width: auto;
+    height: 70vh;
+    border: 1px solid black;
+}
+
+
+#aspit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-decoration: none;
+    background-color:#006699;
+    color:#6BCDC9;
+    padding: 3px 0px;
+}
